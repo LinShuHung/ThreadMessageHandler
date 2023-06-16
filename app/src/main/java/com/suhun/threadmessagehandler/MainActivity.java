@@ -21,9 +21,11 @@ public class MainActivity extends AppCompatActivity {
         showResult1 = findViewById(R.id.result2);
     }
     public void runThread1Fun(View view){
-
+        MyThread myThread1 = new MyThread("happy", "method1");
+        myThread1.start();
     }
     public void runThread2Fun(View view){
-
+        MyThread myThread2 = new MyThread("happy", "method2");
+        myThread2.start();
     }
 }
